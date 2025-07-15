@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/slider.js"></script>
-    <script src="./assets/js/articles.js"></script>
     <script src="./assets/js/login.js"></script>
-     <script src="./assets/js/themes.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/themes.js"></script>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 
 </head>
 <body>
@@ -47,40 +48,55 @@
             </nav>
     </header>
     
-    <section class="layout__slider">
 
-            <button class="slider__btn-prev">
-                <i class="slider__icon fa-solid fa-caret-left"></i>
-            </button>
+    
+    <main class="layout__main">
 
-            <div class="slider__slides">
-
-                <article class="slides__item slides__item--active">
-                    <img class="slides__img" src="./assets/img/hojas.jpg" alt="hojas">
-                </article>
-
-                <article class="slides__item">
-                    <img class="slides__img" src="./assets/img/cielo.jpg" alt="cielo">
-                </article>
-
-                <article class="slides__item">
-                    <img class="slides__img" src="./assets/img/rojo.jpg" alt="rojo">
-                </article>
             
+        <!-- Aqui va el formulario contacto-->
+        <h2 class="main__title">Contacto</h2>
+
+        <form class="main__contact">
+            <div class="contact__group">
+                <label class="contact__label" for="name">Nombre</label>
+                <input type="text" id="contact-name" name="name" class="contact__input" />
+
+            </div>
+ 
+            <div class="contact__group">
+                <label class="contact__label" for="surname">Apellidos</label>
+                <input type="text" id="surname" name="surname" class="contact__input"/>
             </div>
 
+            <div class="contact__group">
+                <label class="contact__label" for="email">Email</label>
+                <input type="email" id="contact-email" name="email" class="contact__input" />
 
-            <button class="slider__btn-next">
-                <i class="slider__icon fa-solid fa-caret-right"></i>
-            </button>
-        
-    </section>
-    
-    <main class="layout__articles">
-
+            </div>        
             
-        <!-- Aqui van los articulos-->
+            <div class="contact__group">
+                <label class="contact__label" for="gender">Genero</label>
+                <select id="gender" name="gender" class="contact__select">
+                    <option class="select__option" value="hombre">Hombre</option>
+                    <option class="select__option" value="mujer">Mujer</option>
+                    <option class="select__option" value="otro">Otro</option>
+                </select>
+            </div>  
 
+            <div class="contact__group">
+                <label class="contact__label" for="date">Fecha nacimiento</label>
+                <input type="date" id="date" name="date" class="contact__input" required/>
+            </div>  
+
+            <div class="contact__group">
+                <label class="contact__label" for="year">Edad</label>
+                <input type="number" id="year" name="year" class="contact__input"/>
+            </div>  
+
+            <input type="submit" value="enviar" class="contact_btn" />
+        </form>
+
+ 
           
 
     </main>
@@ -121,7 +137,7 @@
 
                 <div class="login__form-group">
                     <label class="login__label" for="name">Email :</label>
-                    <input type="email" id="email" name="emial" class="login__input" required />
+                    <input type="email" id="email" name="email" class="login__input" required />
                 </div>
 
                 <div class="login__form-group">

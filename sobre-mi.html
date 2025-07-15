@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/slider.js"></script>
-    <script src="./assets/js/articles.js"></script>
     <script src="./assets/js/login.js"></script>
-     <script src="./assets/js/themes.js"></script>
+    <script src="./assets/js/acordion.js"></script>
+    <script src="./assets/js/themes.js"></script>
+
 
 </head>
 <body>
@@ -47,39 +47,56 @@
             </nav>
     </header>
     
-    <section class="layout__slider">
 
-            <button class="slider__btn-prev">
-                <i class="slider__icon fa-solid fa-caret-left"></i>
-            </button>
-
-            <div class="slider__slides">
-
-                <article class="slides__item slides__item--active">
-                    <img class="slides__img" src="./assets/img/hojas.jpg" alt="hojas">
-                </article>
-
-                <article class="slides__item">
-                    <img class="slides__img" src="./assets/img/cielo.jpg" alt="cielo">
-                </article>
-
-                <article class="slides__item">
-                    <img class="slides__img" src="./assets/img/rojo.jpg" alt="rojo">
-                </article>
-            
-            </div>
-
-
-            <button class="slider__btn-next">
-                <i class="slider__icon fa-solid fa-caret-right"></i>
-            </button>
-        
-    </section>
     
-    <main class="layout__articles">
+    <main class="layout__main">
 
             
-        <!-- Aqui van los articulos-->
+        <!-- Aqui va el acordeon-->
+
+        <h2 class="main__title">Sobre mi</h2>
+
+        <div class="main__accordion">
+            <article class="accordion__collapse">
+                <header class="collapse__header">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <p class="collapse__title">¿Quienes somos?</p>
+
+                </header>
+
+                <div class="collapse__body">
+                    <p class="collapse__Text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio esse cumque optio molestias asperiores a, sint autem id vero totam incidunt quos necessitatibus quia nostrum similique cupiditate maxime soluta sapiente!</p>
+                </div>
+            </article>
+
+            <article class="accordion__collapse">
+                <header class="collapse__header">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <p class="collapse__title">Nuestos servicios</p>
+
+                </header>
+
+                <div class="collapse__body">
+                    <p class="collapse__Text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio esse cumque optio molestias asperiores a, sint autem id vero totam incidunt quos necessitatibus quia nostrum similique cupiditate maxime soluta sapiente!</p>
+                </div>
+            </article>
+
+            <article class="accordion__collapse">
+                <header class="collapse__header">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <p class="collapse__title">¿Que dicen nuestros clientes</p>
+
+                </header>
+
+                <div class="collapse__body">
+                    <p class="collapse__Text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio esse cumque optio molestias asperiores a, sint autem id vero totam incidunt quos necessitatibus quia nostrum similique cupiditate maxime soluta sapiente!</p>
+                </div>
+            </article>
+
+        </div>
 
           
 
