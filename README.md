@@ -45,8 +45,7 @@ Este proyecto consiste en la maquetación y desarrollo de una página web modern
 
 ## 📸 Capturas (opcional)
 
-Puedes añadir aquí capturas de pantalla del proyecto si lo deseas.
-
+![alt text](image.png)
 ## 🧪 Cómo probar el proyecto
 
 1. Clona el repositorio:
